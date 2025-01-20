@@ -228,9 +228,9 @@ workflow {
     script_calcHOIs_6n7pts = "${projectDir}/scripts/calcHOIs_6n7pts.py"
     utils = "${projectDir}/scripts/utilities.py"
 
-    ch_empty_userGenes = file("${projectDir}/EMPTY_userGenes")
-    ch_empty_doubletFile = file("${projectDir}/EMPTY_doubletFile")
-    ch_empty_genesToOne = file("${projectDir}/EMPTY_genesToOne")
+    ch_empty_userGenes = file("${projectDir}/scripts/emptyFile")
+    ch_empty_doubletFile = file("${projectDir}/scripts/emptyFile")
+    ch_empty_genesToOne = file("${projectDir}/scripts/emptyFile")
 
     makeData(script_makeTrainingData,
             params.rawDataPath,
